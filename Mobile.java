@@ -13,13 +13,9 @@ public class Mobile {
 		
 		System.out.println(nokia7610.calling()+" to "+nokia7610.getRecieverNo());
 		System.out.println(note5.calling()+" to "+note5.getRecieverNo());
-		note5.capturePic();
-		
-		
+		note5.capturePic();	
 	}
 }
-
-
 abstract class mobile {
 
 	//private int dailerNo;
@@ -29,16 +25,13 @@ abstract class mobile {
 	public String messaging(String msg) {
 		return "Msg sent:"+msg;
 	}
-	
-	
-	public int getRecieverNo() {
+		public int getRecieverNo() {
 		return recieverNo;
 	}
 	public void setRecieverNo(int recieverNo) {
 		this.recieverNo = recieverNo;
 	}
 }
-
 class phone extends mobile {
 	
 	public String calling() {
