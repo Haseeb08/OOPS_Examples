@@ -35,8 +35,6 @@ class Employee implements Iemployee{
 	}
 	
 }
-
-
 interface ibonus {
 
 	public void addBonus();
@@ -59,11 +57,8 @@ class FulltimeEmp extends Employee implements ibonus{
 	{   double sal=getSal();
 		bonus=amt;
 		setSal(sal+bonus);
-	}
-	
+	}	
 }
-
-
 public class EmployeeMain
 {
  public static void main() {
@@ -74,6 +69,5 @@ public class EmployeeMain
 		System.out.println("Salary : "+emp1.getSal());
 		emp1.addBonus();
 		System.out.println("Salary : "+emp1.getSal());
-		
-	}
+			}
 }
