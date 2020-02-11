@@ -28,7 +28,6 @@ abstract class Laptop{
 interface HighGraphics {
     public String GraphicCard();
 }
-
 class GamingLaptop extends Laptop implements HighGraphics{
     
     public GamingLaptop(String Name) {
@@ -52,7 +51,6 @@ class OfficeLaptop extends Laptop {
         System.out.println("Office Laptop: "+Name+"\nBattery :"+getBattery()+"\nOn Status : "+getOnstatus());
     }
 }
-
 public class LaptopMain
 {
     public static void main() {
@@ -65,6 +63,5 @@ public class LaptopMain
         l2.setBattery(55);
         l2.setOnStatus(true);
         l2.showLaptopDetails();
-    }
-    
+    }   
 }
