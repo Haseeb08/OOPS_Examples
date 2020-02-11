@@ -1,7 +1,3 @@
-
-
-
-
 class BankAcc {
 
 private String AccName;
@@ -85,7 +81,6 @@ public class Bank
         System.out.println(b1.withdraw(500));
         System.out.println("Balance :"+b1.getBalance());
         */
-
         savingBankAcc sb1=new savingBankAcc("Jake", 124, 10);
         sb1.showAccDetails();
         System.out.println(sb1.depost(5000));
@@ -103,7 +98,7 @@ public class Bank
         System.out.println(cb1.withdraw(2000));
         System.out.println("Balance :"+cb1.getBalance());
         
-}
+    }
 }
 
 
