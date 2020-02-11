@@ -13,7 +13,6 @@ abstract class Pen
     
     abstract public String displayPenDetails();
 }
-
 interface button{
 public String b();
 }
