@@ -1,4 +1,3 @@
- 
  abstract class Book {
      private String bookName;
     private String Author;
@@ -58,9 +57,8 @@ class Magzines extends Book {
 }
 
 class Member {
-
-    private String memName;
-    private int memID;
+	 private String memName;
+   	 private int memID;
     
     public Member(String memName,int ID) {
         this.memName=memName;
@@ -71,8 +69,6 @@ class Member {
         return memName;
     }
 }
-
-
 public class library_main {
 
     public static void main() {
@@ -84,6 +80,5 @@ public class library_main {
         lib.getBook(b1,m1);
         lib.getBook(b1,m1);
         lib.getBook(b2,m1);
-
     }
 }
