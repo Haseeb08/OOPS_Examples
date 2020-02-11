@@ -6,7 +6,7 @@ interface camera {
 public class Mobile {
 	public static void main() {
 		mobile nokia7610=new phone();
-		mobile note5=new smartPhone();
+		smartPhone note5=new smartPhone();
 		
 		nokia7610.setRecieverNo(123456789);
 		note5.setRecieverNo(123123123);
