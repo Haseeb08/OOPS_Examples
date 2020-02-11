@@ -1,3 +1,4 @@
+//Family tree 
 interface grandFather {
 	public void grandFatherDetail();
 }
@@ -29,10 +30,10 @@ class Father implements grandFather,grandMother{
 	}
 	
 	public void grandFatherDetail() {
-		System.out.println("Grandfather:\t Name: Mike");
+		System.out.println("Grandfather:\t Name: Jack");
 	}
 	public void grandMotherDetail() {
-		System.out.println("Grandmother:\t Name: Jane");
+		System.out.println("Grandmother:\t Name: Judy");
 	}
 
 }
@@ -54,12 +55,12 @@ public class FamilyTree {
 	
 	public static void main() {
 		Child child=new Child();
-		child.setName("Emma");
-		child.setAge(10);
-		Father father=new Father();
-		father.setName("Ross");
-		father.setAge(35);		
-		child.ChildDetail();
+		child.setName("Emma");                 
+		child.setAge(10);				// Jack    Judy
+		Father father=new Father();			//	|  |
+		father.setName("Ross");				//      Ross  Rachel
+		father.setAge(35);				//	    |	|		
+		child.ChildDetail();				//           Emma
 		father.fatherDetail();
 		child.motherDetail();
 		father.grandFatherDetail();
