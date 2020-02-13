@@ -12,7 +12,10 @@ public class Main {
 		p2.setPrice(2500);
 		p2.setBass(true);
 		
+		System.out.println(p1.getClass());
 		p1.diplayDetails();      //Polymorphism
+		
+		System.out.println(p1.getClass());
 		p2.diplayDetails();
 		System.out.println(p2.setBluetoothOn());
 		
